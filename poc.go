@@ -34,7 +34,7 @@ func NewPOC(r io.Reader, schema string) (*POC, error) {
 
 	url := schema + host + path
 
-	inputsLine := lines[len(lines)-1]
+	inputsLine := lines[len(lines)-2]
 
 	inputsSplitted := strings.Split(inputsLine, "&")
 
@@ -75,7 +75,7 @@ var tpl = `<html>
 			document.forms[0].submit();
 		</script>
 	</body>
-</html></pre>
+</html>
 `
 
 func (p *POC) Write(wr io.Writer) error {
