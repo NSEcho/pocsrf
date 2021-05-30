@@ -53,4 +53,8 @@ $ cat output_csrf.html
                         document.forms[0].submit();
                 </script>
         </body>
-</html>```
+</html>
+```
+
+# Note
+The way the data is extracted now from the file is a bad way and will probably need to update it.
